@@ -7,11 +7,9 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Box from "@mui/material/Box";
 import PrimaryText from "../typography";
-import { TableFooter, TablePagination, useTheme } from "@mui/material";
-import { CardStaff, LogoStaff, WomanIcon } from "../../../assets/supportIcon";
+import { useTheme } from "@mui/material";
+import { CardStaff, LogoStaff } from "../../../assets/supportIcon";
 import Pagination from "./components/  Pagination";
-
- 
 
 type Props = {
   data: DProps[];

@@ -1,4 +1,4 @@
-import { Box, height } from "@mui/system";
+import { Box } from "@mui/system";
 
 interface Props {
   height?: string;

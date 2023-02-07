@@ -22,9 +22,6 @@ const Pagination = () => {
     setPage(0);
   };
 
-  console.log("page", page);
-  console.log("rowsPerPage/150", 150 / rowsPerPage + 1);
-
   const num = 150 / rowsPerPage + 1;
   const numbers = [];
 

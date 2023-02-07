@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import   { FC } from "react";
 import { Button, useTheme } from "@mui/material";
 import PrimaryText from "../typography";
 
