@@ -5,12 +5,7 @@ import HeaderTickets from "./components/noTickets/HeaderTickets";
 import TableTickets from "./components/table";
 import { useEffect, useState } from "react";
 
-
- 
-
-
 const MyTickets = () => {
-
   const [laoding, setLoading] = useState(true);
 
   useEffect(() => {
@@ -20,7 +15,6 @@ const MyTickets = () => {
       }, 3000);
     }
   }, [laoding]);
-
 
   return (
     <Body>

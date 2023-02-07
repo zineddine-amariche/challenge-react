@@ -1,10 +1,7 @@
-import { ArrowDropDownOutlined } from "@mui/icons-material";
-import { Button, Menu, MenuItem, Typography, useTheme } from "@mui/material";
-import { Box } from "@mui/system";
-import React, { useState } from "react";
+import { Button, Menu, MenuItem, useTheme } from "@mui/material";
+import { useState } from "react";
 import { ArrowDown } from "../../../assets/supportIcon";
 import CircleIteme from "../CircleItems";
-import FlexBetween from "../FlexBetween";
 import MainContainer from "../mainContainer";
 import PrimaryText from "../typography";
 
@@ -26,7 +23,7 @@ const SelectList = () => {
           textTransform: "none",
           gap: "1rem",
           backgroundColor: "#fff",
-          mr:"20px"
+          mr: "20px",
         }}
       >
         <MainContainer sx={{}}>
@@ -45,8 +42,7 @@ const SelectList = () => {
         anchorEl={anchorEl}
         open={isOpen}
         onClose={handleClose}
-        anchorOrigin={{ vertical: "bottom", horizontal: "left"  }}
-       
+        anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
       >
         <MenuItem onClick={handleClose}>
           <PrimaryText

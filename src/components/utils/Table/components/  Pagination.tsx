@@ -65,11 +65,11 @@ const Pagination = () => {
             }}
           >
             <PrimaryText
-                fontWeight={"700"}
-                fontSize={"10px"}
-                text={(number).toString()}
-                color={theme.palette.primary.light}
-              />
+              fontWeight={"700"}
+              fontSize={"10px"}
+              text={number.toString()}
+              color={theme.palette.primary.light}
+            />
           </Box>
         ))}
       </Box>

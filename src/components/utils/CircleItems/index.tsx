@@ -1,6 +1,6 @@
 import { useTheme } from "@mui/material";
 import { Box } from "@mui/system";
-import React, { FC } from "react";
+import   { FC } from "react";
 import PrimaryText from "../typography";
 
 type Props = {

@@ -1,8 +1,6 @@
 import React from "react";
-import TextField from "@mui/material/TextField";
 import { Box, InputBase } from "@mui/material";
 import { useTheme } from "@mui/material";
-import PrimaryText from "../typography";
 import { SearchIcon } from "../../../assets/supportIcon";
 
 interface Props {

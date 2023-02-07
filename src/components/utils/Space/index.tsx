@@ -1,15 +1,11 @@
-import { Box, height } from '@mui/system'
-import React from 'react'
-
+import { Box, height } from "@mui/system";
 
 interface Props {
-    height?: string;
-  }
-
-const Space = ({height}:Props) => {
-  return (
-    <Box sx={{height:height?height:"10px"}}></Box>
-  )
+  height?: string;
 }
 
-export default Space
+const Space = ({ height }: Props) => {
+  return <Box sx={{ height: height ? height : "10px" }}></Box>;
+};
+
+export default Space;

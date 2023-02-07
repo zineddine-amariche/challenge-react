@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { useTheme } from "@mui/material";
 import SupportForums from "./components/SupportForums";
 import Space from "../../components/utils/Space";

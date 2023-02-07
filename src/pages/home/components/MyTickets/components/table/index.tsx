@@ -1,12 +1,9 @@
-import { useEffect, useState } from "react";
 import { NoActiveTicket } from "../../../../../../assets/supportIcon";
 import Column from "../../../../../../components/utils/BoxColumn";
 import Space from "../../../../../../components/utils/Space";
 import PrimaryText from "../../../../../../components/utils/typography";
 import { useTheme } from "@mui/material";
 import BasicTable from "../../../../../../components/utils/Table";
-import { useQuery } from "react-query";
-import axios from "axios";
 import { items } from "../../../../data";
 
 type Props = {
