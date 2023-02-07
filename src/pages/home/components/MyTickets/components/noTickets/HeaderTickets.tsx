@@ -5,7 +5,11 @@ import { SearchInput } from "../../../../../../components/utils/SearchInput";
 import SelectList from "../../../../../../components/utils/SelectList";
 import PrimaryText from "../../../../../../components/utils/typography";
 
-const HeaderTickets = () => {
+type Props = {
+  laoding: boolean;
+};
+
+const HeaderTickets: React.FC<Props> = ({ laoding }) => {
   const theme = useTheme();
   const onChange = () => {};
 
@@ -23,15 +27,18 @@ const HeaderTickets = () => {
           text={"My Tickets"}
           color={theme.palette.primary.dark}
         />
-        <MainContainer>
-          <SelectList />
-          <SearchInput
-            placeholder="Search Tickets"
-            value=""
-            onChange={onChange}
-            width={"100%"}
-          />
-        </MainContainer>
+
+        {laoding ? null : (
+          <MainContainer>
+            <SelectList />
+            <SearchInput
+              placeholder="Search Tickets"
+              value=""
+              onChange={onChange}
+              width={"100%"}
+            />
+          </MainContainer>
+        )}
       </FlexBetween>
     </Box>
   );

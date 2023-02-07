@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NoActiveTicket } from "../../../../../../assets/supportIcon";
 import Column from "../../../../../../components/utils/BoxColumn";
 import Space from "../../../../../../components/utils/Space";
@@ -7,40 +7,13 @@ import { useTheme } from "@mui/material";
 import BasicTable from "../../../../../../components/utils/Table";
 import { useQuery } from "react-query";
 import axios from "axios";
+import { items } from "../../../../data";
 
-
-interface IApiError {
-  message: string;
-  description: string;
-  statusCode: string | number;
-  code:string
-}
-const TableTickets = () => {
-  const fetchTickets = () => {
-    return axios.get(" http://localhost:3500/items");
-  };
-
-  const { isLoading, data, isError, error } = useQuery(
-    "Tickets",
-    fetchTickets,
-    {
-      onError: (err: IApiError) => err,
-    }
-  );
-
-  const [Data, setData] = useState([]);
-  if (isLoading) {
-    return <h2>Loading ...</h2>;
-  }
-  if (isError) {
-    return <h2>{error.code}</h2>;
-  }
-
-  return (
-    <Column>
-      {!data?.data.length ? <NoData /> : <BasicTable data={data.data} />}
-    </Column>
-  );
+type Props = {
+  laoding: boolean;
+};
+const TableTickets: React.FC<Props> = ({ laoding }) => {
+  return <Column>{laoding ? <NoData /> : <BasicTable data={items} />}</Column>;
 };
 
 export default TableTickets;

@@ -11,121 +11,7 @@ import { TableFooter, TablePagination, useTheme } from "@mui/material";
 import { CardStaff, LogoStaff, WomanIcon } from "../../../assets/supportIcon";
 import Pagination from "./components/  Pagination";
 
-// function createData(
-//   name: string,
-//   informations: string,
-//   Status: string,
-//   Created: string,
-//   Replies: string,
-//   staf: boolean,
-//   numStaff: string,
-//   Icon: React.FC
-// ) {
-//   return { name, informations, Status, Created, Replies, staf, numStaff, Icon };
-// }
-
-// const rows = [
-//   createData(
-//     "DOMAIN MAPPED SITE SHOWS CORS POLICY ERROR",
-//     "General WordPress ",
-//     "Open",
-//     "yesterday @ 12:04 AM",
-//     "last by {Member Name}",
-//     false,
-//     "2",
-//     WomanIcon
-//   ),
-//   createData(
-//     "AFTER ENABLING CDN IMAGE SIZES ARE BIG",
-//     "The Hub",
-//     "Resolved",
-//     "Today @ 12:04 AM",
-//     "Last by {Staff Name}",
-//     true,
-//     "2",
-//     WomanIcon
-//   ),
-//   createData(
-//     "GOOGLE SUGGESTS TO PROPERLY SIZE IMAGES",
-//     "Plugins & Themes - {plugin_name}",
-//     "Open",
-//     "yesterday @ 12:04 AM",
-//     "last by Jack Sean",
-//     false,
-//     "2",
-//     WomanIcon
-//   ),
-//   createData(
-//     "SERVE CACHED PAGES FROM THE CDN",
-//     "Features & Feedback - {plugin_name}",
-//     "Resolved",
-//     "March 3 @ 12:04 AM",
-//     "Last by {Staff Name}",
-//     true,
-//     "1",
-//     WomanIcon
-//   ),
-//   createData(
-//     "BLOG UPDATES NOTIFICATIONS VIA EMAIL",
-//     "Features & Feedback",
-//     "Feedback",
-//     "March 1 @ 12:04 AM",
-//     "last by Jack Sean",
-//     false,
-//     "4",
-//     WomanIcon
-//   ),
-//   createData(
-//     "HOW TO MAKE A AN ANCHOR LINk",
-//     "General WordPress ",
-//     "Open",
-//     "March 2 @ 7:12 AM",
-//     "last by Username Here",
-//     false,
-//     "7",
-//     WomanIcon
-//   ),
-//   createData(
-//     "AFTER ENABLING CDN IMAGE SIZES ARE BIG",
-//     "The Hub",
-//     "Open",
-//     "March 2 @ 7:12 AM",
-//     "last by Username Here",
-//     false,
-//     "2",
-//     WomanIcon
-//   ),
-//   createData(
-//     "SERVE CACHED PAGES FROM THE CDN",
-//     "Features & Feedback - {plugin_name}",
-//     "Feedback",
-//     "March 2 @ 7:12 AM",
-//     "Last by {Staff Name}",
-//     true,
-//     "4",
-//     WomanIcon
-//   ),
-//   createData(
-//     "BLOG UPDATES NOTIFICATIONS VIA EMAIL",
-//     "Features & Feedback",
-//     "Resolved",
-//     "March 2 @ 7:12 AM",
-//     "Last by {Staff Name}",
-//     true,
-//     "2",
-//     WomanIcon
-//   ),
-//   createData(
-//     "HOW TO MAKE A AN ANCHOR LINk",
-//     "General WordPress ",
-//     "Open",
-//     "March 2 @ 7:12 AM",
-//     "last by {Member Name}",
-//     true,
-//     "3",
-//     WomanIcon
-//   ),
-// ];
+ 
 
 type Props = {
   data: DProps[];
@@ -138,7 +24,7 @@ interface DProps {
   Replies: string;
   staf: boolean;
   numStaff: string;
-  Icon: React.FC;
+  Icon: string;
 }
 
 const BasicTable: React.FC<Props> = ({ data }) => {
